@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/login.css">
+   <script src="https://kit.fontawesome.com/de8ae7ab0d.js" crossorigin="anonymous"></script>
+   <title>LOGIN | CERITA SALMA TAQIYA</title>
+   <style>
+      :root {
+         --primary: rgb(33, 201, 243);
+         --second: rgb(211, 245, 18);
+         --coral: coral;
+         --dark: #2222 --text-light: white;
+         --text-dark: black;
+
+      }
+
+      *,
+      html {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+         font-family: Arial, Helvetica, sans-serif;
+         scroll-behavior: smooth;
+      }
+
+      body {
+         box-sizing: border-box;
+         background-color: #444;
+      }
+
+      :root {
+         --primary: rgb(33, 201, 243);
+         --second: rgb(211, 245, 18);
+         --coral: coral;
+         --dark: #2222 --text-light: white;
+         --text-dark: black;
+
+      }
+
+      html {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+         font-family: Arial, Helvetica, sans-serif;
+         scroll-behavior: smooth;
+      }
+
+      .container {
+         width: 100%;
+         height: 80vh;
+         padding: 30px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: url(/assets/library.jpg);
+      }
+
+      form {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 20px;
+         border-radius: 15px;
+         background-color: #222;
+         box-shadow: 5px 5px 10px var(--second);
+      }
+
+      @media screen and (max-width:470px) {
+         .container {
+            width: 100%;
+         }
+
+         form {
+            width: 100%;
+         }
+
+         input {
+            width: 20%;
+         }
+      }
+
+      form label {
+         text-align: left;
+         margin: 10px 0px;
+         font-weight: bold;
+         color: white;
+
+      }
+
+      form input {
+         padding: 10px;
+         width: 80%;
+         border-radius: 20px;
+         border: none;
+         opacity: 80%;
+      }
+
+      button {
+         padding: 15px;
+         margin: 10px;
+         width: 80%;
+         border-radius: 20px;
+         border: none;
+         background-color: var(--second);
+         font-weight: bold;
+         font-size: 18px;
+      }
+
+      button:hover {
+         background-color: var(--primary);
+         transition: ease 0.3s;
+         cursor: pointer;
+      }
+
+      h2 {
+         margin: 10px 0px;
+         border-bottom: 2px solid var(--coral);
+         color: aliceblue;
+         padding: 5px;
+      }
+
+
+
+      /* navigasi style */
+      nav {
+         width: 100%;
+         background-color: var(--primary);
+         display: flex;
+         height: 100px;
+         transition: all ease-in-out 1s;
+         justify-content: center;
+         align-items: center;
+         top: 0;
+      }
+
+      nav img {
+         position: absolute;
+         height: 80px;
+         left: 0;
+
+      }
+
+      nav ul {
+         display: flex;
+         width: 50%;
+         height: 70%;
+         background-color: var(--second);
+         justify-content: center;
+         border-radius: 40px;
+         align-items: center;
+      }
+
+      nav ul li {
+         list-style: none;
+         font-weight: 700;
+         border-radius: 30px;
+         width: 20%;
+         margin: 0 20px;
+         padding: 10px;
+         text-align: center;
+         color: var(--text-dark);
+      }
+
+      i {
+         margin-right: 10px;
+      }
+
+      nav ul li:hover {
+         background-color: #aaa;
+         transition: all ease-in-out 0.4s;
+      }
+
+      nav ul li a {
+         color: var(--text-dark);
+         text-decoration: none;
+      }
+
+      @media screen and (max-width:650px) {
+
+         nav {
+            width: 100%;
+            padding: 10px;
+
+         }
+
+         nav ul {
+            width: 100%;
+            padding: 5px;
+         }
+
+         nav ul li {
+            height: 80%;
+            width: 90%;
+            margin: 5px;
+            overflow: hidden;
+
+         }
+
+         nav ul li a {
+            visibility: hidden;
+         }
+
+         nav img {
+            visibility: hidden
+         }
+
+         ;
+
+      }
+
+      /* footer */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+      footer {
+         display: block;
+         margin-bottom: 0px;
+      }
+
+      #banner-footer {
+         text-align: center;
+         font-size: xx-large;
+         color: white;
+
+      }
+
+
+      .container-foot {
+         max-width: 100%;
+
+      }
+
+      .row {
+         display: flex;
+         flex-wrap: wrap;
+         width: 100%;
+         margin-top: 15px;
+         ;
+      }
+
+      ul {
+         list-style: none;
+      }
+
+      .footer {
+         background-color: #24262b;
+         padding: 70px 0;
+      }
+
+      .footer-col {
+         width: 25%;
+         padding: 0 15px;
+
+      }
+
+      .footer-col h4 {
+         font-size: 18px;
+         color: #ffffff;
+         text-transform: capitalize;
+         margin-bottom: 35px;
+         font-weight: 500;
+         position: relative;
+      }
+
+      .footer-col h4::before {
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: -10px;
+         background-color: #e91e63;
+         height: 2px;
+         box-sizing: border-box;
+         width: 50px;
+      }
+
+      .footer-col ul li:not(:last-child) {
+         margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+         font-size: 16px;
+         text-transform: capitalize;
+         color: #ffffff;
+         text-decoration: none;
+         font-weight: 300;
+         color: #bbbbbb;
+         display: block;
+         transition: all 0.3s ease;
+      }
+
+      .footer-col ul li a:hover {
+         color: #ffffff;
+         padding-left: 8px;
+      }
+
+      .footer-col .social-links a {
+         display: inline-block;
+         height: 40px;
+         width: 40px;
+         background-color: rgba(255, 255, 255, 0.2);
+         margin: 0 10px 10px 0;
+         text-align: center;
+         line-height: 40px;
+         border-radius: 50%;
+         color: #ffffff;
+         transition: all 0.5s ease;
+      }
+
+      .footer-col .social-links a:hover {
+         color: #24262b;
+         background-color: #ffffff;
+      }
+
+      /*responsive*/
+      @media(max-width: 767px) {
+         .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+         }
+      }
+
+      @media(max-width: 574px) {
+         .footer-col {
+            width: 100%;
+         }
+
+         .row {
+            flex-wrap: wrap;
+         }
+
+      }
+   </style>
+</head>
+
+<body>
+   <!-- NAV-->
+   <nav>
+      <img src="/assets/cerita_taqiya-removebg-preview.png" alt="#">
+      <ul>
+         <li> <i class="fa-solid fa-house"></i><a href="#profile">HOME</a></li>
+         <li> <i class="fa-solid fa-book"></i><a href="#story">STORY</a></li>
+         <li> <i class="fa-solid fa-link"></i><a href="#social">SOCIAL</a></li>
+         <li> <i class="fa-solid fa-user"></i><a href="">LOGIN</a></li>
+      </ul>
+   </nav>
+   <!-- CONTENT -->
+   <div class="container">
+      <form action="proses.php" method="post">
+         <h2>LOGIN | CERITA TAQIYA</h2>
+         <label for="username">USERNAME</label>
+         <input type="text" name="username" id="" placeholder="username">
+         <label for="password">PASSWORD</label>
+         <input type="password" name="password" id="" placeholder="password">
+         <button type="submit">LOGIN</button>
+      </form>
+   </div>
+   <!-- footer -->
+   <footer class="footer">
+      <div class="container-foot">
+         <h1 id="banner-footer">CERITA TAQIYA</h1>
+         <div class="row">
+            <div class="footer-col">
+               <h4>company</h4>
+               <ul>
+                  <li><a href="#">about me</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy policy</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>online shop</h4>
+               <ul>
+                  <li><a href="#">bag</a></li>
+                  <li><a href="#">shoes</a></li>
+                  <li><a href="#">dress</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
